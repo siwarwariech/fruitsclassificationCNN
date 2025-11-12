@@ -16,16 +16,16 @@ A comprehensive deep learning dashboard for classifying fruit quality (Fresh vs 
 - **Visual Interpretations**: Model performance comparisons and error analysis
 - **Responsive Design**: Material Design inspired interface
 
-## 📊 Supported Fruits & Classes
+## 📊 Project Overview
 
-| Fruit | Fresh | Rotten |
-|-------|-------|--------|
-| 🍑 Peach | ✅ | ✅ |
-| 🍓 Strawberry | ✅ | ✅ |
-| 🍎 Pomegranate | ✅ | ✅ |
+Fruit Quality Classifier is a comprehensive deep learning application that provides:
 
-**Total: 6 classes** (3 fruits × 2 quality states)
-
+- [x] **Multi-Model Comparison** - CNN, ResNet, and CNN+Attention
+- [x] **Real-time Prediction** - Upload images for instant classification
+- [x] **Interactive Dashboard** - Built with Plotly Dash and Bootstrap
+- [x] **Comprehensive Analytics** - Confusion matrices, ROC curves, F1 scores
+- [x] **Model Interpretations** - Performance comparisons and recommendations
+- [ ] **Mobile App Integration** - Future development
 ## 🏗️ Project Architecture
 
 ```
@@ -71,3 +71,19 @@ Channel and spatial attention for feature refinement
 
 
 Optimal balance between accuracy and inference speed
+
+## 🔄 Application Workflow
+
+```mermaid
+graph TD
+    A[User Uploads Fruit Image] --> B[Image Preprocessing]
+    B --> C[Multi-Model Prediction]
+    C --> D[CNN Model Analysis]
+    C --> E[ResNet Model Analysis]
+    C --> F[CNN+Attention Analysis]
+    D --> G[Results Comparison]
+    E --> G
+    F --> G
+    G --> H[Interactive Visualization]
+    G --> I[Performance Metrics]
+    G --> J[Download Results]
