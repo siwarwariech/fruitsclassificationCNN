@@ -1,0 +1,81 @@
+a {
+    display: block;
+    padding: 10px;
+    color: white;  /* Blanc par défaut */
+    text-decoration: none;
+    transition: background 0.3s, padding-left 0.3s;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #333333;
+    padding-left: 15px;
+    color: #ff99cc;  /* Rose au survol */
+    border-left: 4px solid #ff99cc;
+}
+
+a.active {
+    background-color: #292929;
+    color: #ff99cc;  /* Rose actif */
+    font-weight: bold;
+    border-left: 4px solid #ff99cc;
+}
+
+#page-content {
+    margin-left: 260px;  /* Laisse de la place pour la sidebar */
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1a1a1a;
+}
+
+/* Titres */
+#page-content h1, 
+#page-content h2, 
+#page-content h3 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Paragraphes */
+#page-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Graphiques Dash */
+#page-content .dash-graph {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+body {
+    background-image: url('/assets/banner.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#page-content {
+    background-color: rgba(255, 255, 255, 0.85); /* white semi-transparent overlay */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
